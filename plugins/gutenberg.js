@@ -14,7 +14,7 @@ wp.domReady(function () {
 
   // Remove core/quote block style variations
   if (window.luuptekGutenbergSettings.disableQuoteStyles) {
-    wp.blocks.unregisterBlockStyle("core/quote", ["default", "large"]);
+    wp.blocks.unregisterBlockStyle("core/quote", ["default", "plain"]);
   }
 
   // Remove core/pullquote block style variations
