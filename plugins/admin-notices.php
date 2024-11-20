@@ -10,6 +10,10 @@ add_action(
 			return;
 		}
 
+		if ( apply_filters( 'disable_acf_warning', false ) ) {
+			return;
+		}
+
 		?>
 		<div class="notice notice-warning is-dismissible">
 			<p><?php echo apply_filters( 'luuptek_no_acf_warning_message', 'Näyttäisi siltä, että sinulla ei ole Advances Custom Fields Pro-lisäosaa aktivoituna. Jos käytät Luuptek-teemaa, kyseinen lisäosa pitää olla asennettuna ja aktivoitu.' ); ?></p>
