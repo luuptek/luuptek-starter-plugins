@@ -24,7 +24,7 @@ add_action(
 			'comments_per_page'             => '10',
 			'default_comments_page'         => 'newest',
 			'use_trackback'                 => '0',
-			'uploads_use_yearmonth_folders' => '',
+			'uploads_use_yearmonth_folders' => '1',
 			'date_format'                   => 'd.m.Y',
 			'default_post_edit_rows'        => 40,
 			'permalink_structure'           => '/%postname%/',
