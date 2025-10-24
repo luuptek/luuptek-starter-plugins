@@ -15,3 +15,11 @@ add_action(
 		remove_action( 'wp_head', 'wp_shortlink_wp_head', 10 );
 	}
 );
+
+// No need for dashicons when not logged in
+add_action( 'wp_enqueue_scripts', function () {
+	if ( ! is_user_logged_in() ) {
+		wp_dequeue_style( 'dashicons' );
+		wp_deregister_style( 'dashicons' );
+	}
+}, 100 );
