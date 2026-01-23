@@ -22,6 +22,7 @@ There are multiple filters available (see details below) to customise plugin beh
 - Removes emoji characters from the text of comments in RSS feeds.
 - Removes emoji characters from emails sent by WordPress.
 - When an email is sent using WordPress's wp_mail() function, set the "From" name to the site's name by default
+- Email to site admin is disabled on password changed
 - Multiple Gutenberg modifications (customised via filters)
 - Remove accents from filenames
 - Disable scaling of big image sizes
@@ -58,6 +59,10 @@ Modify file `library/hooks/luuptek-mu-filters.php` according to your need in the
 - No parameters
 - Use to define notification, if you don't have ACF Pro activated.
 
+`disable_acf_warning`
+- Return true/false
+- Use to disable no acf warning (this is handy in projects were ACF is not needed anymore)
+
 `luuptek_disable_comments`
 - Return true/false
 - comments are disable automatically (true)
@@ -70,6 +75,10 @@ Modify file `library/hooks/luuptek-mu-filters.php` according to your need in the
 `luuptek_disable_quide_feed`
 - Luuptek guide feed is provided by default
 - disable it by setting filter value to true
+
+`disable_luuptek_starter_email_from`
+- Return true/false
+- Used by default  to prevent emails from sender name "WordPress"
 
 # Gutenberg related filters
 
