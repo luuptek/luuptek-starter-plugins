@@ -1,6 +1,6 @@
 # Luuptek Starter Plugins
 
-This is plugin repo to be used with [Luuptek Starter theme](https://github.com/luuptek/luuptek-wp-starter).
+This is plugin repo to be used with [Luuptek Starter theme](https://github.com/luuptek/luuptek-wp-starter). Or with any other WP-theme. It extends features that are usually within base theme.
 
 There are multiple filters available (see details below) to customise plugin behavior.
 
