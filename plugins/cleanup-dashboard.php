@@ -33,7 +33,7 @@ add_action(
 add_action(
 	'wp_dashboard_setup',
 	function () {
-		if ( apply_filters( 'luuptek_disable_quide_feed', false ) ) {
+		if ( apply_filters( 'luuptek_disable_guide_feed', false ) ) {
 			return;
 		}
 
