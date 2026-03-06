@@ -11,7 +11,7 @@ add_action(
 		remove_meta_box( 'dashboard_site_health', 'dashboard', 'normal' );
 		remove_meta_box( 'dashboard_activity', 'dashboard', 'normal' );
 		remove_meta_box( 'dashboard_quick_press', 'dashboard', 'normal' );
-		remove_meta_box( 'rg_forms_dashboard', 'dashboard', 'normal' );
+		remove_meta_box( 'rg_forms_dashboard', 'dashboard', 'normal' ); // Gravity forms meta box
 	}
 );
 
