@@ -5,75 +5,14 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 /**
- * Enable only certain blocks for Gutenberg
- * ie. disable some Core Gutenberg Blocks
+ * Limit Gutenberg blocks to the default Luuptek editor palette.
  *
- * https://rudrastyh.com/gutenberg/remove-default-blocks.html
+ * This plugin provides a conservative default block set for Luuptek projects.
+ * Projects can extend, replace or disable these restrictions through filters
+ * when different editor capabilities are needed.
  *
- * Disabled Core Blocks:
- * 'core/button',
- * 'core/buttons',
- * 'core/cover'
- * 'core/code',
- * 'core/freeform',
- * 'core/group',
- * 'core/html',
- * 'core/preformatted',
- * 'core/verse',
- * 'core/more',
- * 'core/nextpage',
- * 'core/spacer',
- * 'core/archives',
- * 'core/categories',
- * 'core/latest-comments',
- * 'core/latest-posts',
- * 'core/search',
- * 'core/social-links',
- * 'core/social-link',
- * 'core/tag-cloud',
- * 'core/calendar',
- * 'core/rss',
- * 'core/latest-posts'
- * 'core-embed/twitter',
- * 'core-embed/youtube',
- * 'core-embed/facebook',
- * 'core-embed/instagram',
- * 'core-embed/wordpress',
- * 'core-embed/soundcloud',
- * 'core-embed/spotify',
- * 'core-embed/flickr',
- * 'core-embed/vimeo',
- * 'core-embed/animoto',
- * 'core-embed/cloudup',
- * 'core-embed/collegehumor',
- * 'core-embed/dailymotion',
- * 'core-embed/funnyordie',
- * 'core-embed/hulu',
- * 'core-embed/imgur',
- * 'core-embed/issuu',
- * 'core-embed/kickstarter',
- * 'core-embed/meetup-com',
- * 'core-embed/mixcloud',
- * 'core-embed/photobucket',
- * 'core-embed/polldaddy',
- * 'core-embed/reddit',
- * 'core-embed/reverbnation',
- * 'core-embed/screencast',
- * 'core-embed/scribd',
- * 'core-embed/slideshare',
- * 'core-embed/smugmug',
- * 'core-embed/speaker-deck',
- * 'core-embed/ted',
- * 'core-embed/tumblr',
- * 'core-embed/videopress',
- * 'core-embed/wordpress-tv',
- *
- * @param bool|array $allowed_block_types Array of block type
- *                                                          slugs, or boolean
- *                                                          to enable/disable
- *                                                          all.
- * @param WP_Block_Editor_Context $block_editor_context The current block
- *                                                          editor context.
+ * @param bool|array $allowed_blocks Existing allowed block types.
+ * @param WP_Block_Editor_Context $block_editor_context Current editor context.
  */
 add_filter( 'allowed_block_types_all', function ( $allowed_blocks, $block_editor_context ) {
 
