@@ -6,10 +6,6 @@ if ( ! defined( 'ABSPATH' ) ) {
 add_action(
 	'admin_init',
 	function () {
-		remove_meta_box( 'dashboard_incoming_links', 'dashboard', 'normal' );
-		remove_meta_box( 'dashboard_plugins', 'dashboard', 'normal' );
-		remove_meta_box( 'dashboard_primary', 'dashboard', 'normal' );
-		remove_meta_box( 'dashboard_secondary', 'dashboard', 'normal' );
 		remove_meta_box( 'dashboard_right_now', 'dashboard', 'normal' );
 		remove_meta_box( 'dashboard_site_health', 'dashboard', 'normal' );
 		remove_meta_box( 'dashboard_activity', 'dashboard', 'normal' );
