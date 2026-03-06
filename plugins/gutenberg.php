@@ -180,9 +180,3 @@ function luuptek_gutenberg_mu_plugin_enqueue() {
 }
 
 add_action( 'enqueue_block_editor_assets', 'luuptek_gutenberg_mu_plugin_enqueue' );
-
-/**
- * Remove unnecessary style-tags that were created in WP 5.9 onwards
- */
-//remove_filter( 'render_block', 'wp_render_layout_support_flag', 10 );
-//remove_filter( 'render_block', 'gutenberg_render_layout_support_flag', 10 );
